@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C1E96DF-E254-47C1-AA77-C406DA8269C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MasterPolApp</RootNamespace>
+    <AssemblyName>MasterPolApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Мастер пол.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Study\FitnessClub\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthForm.Designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSON\Claster.cs" />
+    <Compile Include="Lenta\EmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\EmployeesForm.Designer.cs">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LentaHandlerClass.cs" />
+    <Compile Include="Lenta\AccessLogsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\AccessLogsForm.Designer.cs">
+      <DependentUpon>AccessLogsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\EmployeeSkillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\EmployeeSkillsForm.Designer.cs">
+      <DependentUpon>EmployeeSkillsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\ManagersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\ManagersForm.Designer.cs">
+      <DependentUpon>ManagersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\MaterialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\MaterialsForm.Designer.cs">
+      <DependentUpon>MaterialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\MaterialStockHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\MaterialStockHistoryForm.Designer.cs">
+      <DependentUpon>MaterialStockHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\OrderItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\OrderItemsForm.Designer.cs">
+      <DependentUpon>OrderItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\OrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\OrdersForm.Designer.cs">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\PartnerRatingHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\PartnerRatingHistoryForm.Designer.cs">
+      <DependentUpon>PartnerRatingHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\PartnerSalesLocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\PartnerSalesLocationsForm.Designer.cs">
+      <DependentUpon>PartnerSalesLocationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\PartnersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\PartnersForm.Designer.cs">
+      <DependentUpon>PartnersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\ProductMaterialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\ProductMaterialsForm.Designer.cs">
+      <DependentUpon>ProductMaterialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\ProductMinPriceHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\ProductMinPriceHistoryForm.Designer.cs">
+      <DependentUpon>ProductMinPriceHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\ProductWarehouseStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\ProductWarehouseStockForm.Designer.cs">
+      <DependentUpon>ProductWarehouseStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\SalesHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\SalesHistoryForm.Designer.cs">
+      <DependentUpon>SalesHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\SuppliersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\SuppliersForm.Designer.cs">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\SupplyHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\SupplyHistoryForm.Designer.cs">
+      <DependentUpon>SupplyHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\WarehousesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\WarehousesForm.Designer.cs">
+      <DependentUpon>WarehousesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenta\WarehouseStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lenta\WarehouseStockForm.Designer.cs">
+      <DependentUpon>WarehouseStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainHandlerForm.Designer.cs">
+      <DependentUpon>MainHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\CommonHandlerTablesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\CommonHandlerTablesForm.Designer.cs">
+      <DependentUpon>CommonHandlerTablesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Title.Designer.cs">
+      <DependentUpon>Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterPolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\EmployeesForm.resx">
+      <DependentUpon>EmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\AccessLogsForm.resx">
+      <DependentUpon>AccessLogsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\EmployeeSkillsForm.resx">
+      <DependentUpon>EmployeeSkillsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\ManagersForm.resx">
+      <DependentUpon>ManagersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\MaterialsForm.resx">
+      <DependentUpon>MaterialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\MaterialStockHistoryForm.resx">
+      <DependentUpon>MaterialStockHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\OrderItemsForm.resx">
+      <DependentUpon>OrderItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\OrdersForm.resx">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\PartnerRatingHistoryForm.resx">
+      <DependentUpon>PartnerRatingHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\PartnerSalesLocationsForm.resx">
+      <DependentUpon>PartnerSalesLocationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\PartnersForm.resx">
+      <DependentUpon>PartnersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\ProductMaterialsForm.resx">
+      <DependentUpon>ProductMaterialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\ProductMinPriceHistoryForm.resx">
+      <DependentUpon>ProductMinPriceHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\ProductWarehouseStockForm.resx">
+      <DependentUpon>ProductWarehouseStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\SalesHistoryForm.resx">
+      <DependentUpon>SalesHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\SuppliersForm.resx">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\SupplyHistoryForm.resx">
+      <DependentUpon>SupplyHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\WarehousesForm.resx">
+      <DependentUpon>WarehousesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenta\WarehouseStockForm.resx">
+      <DependentUpon>WarehouseStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainHandlerForm.resx">
+      <DependentUpon>MainHandlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Tables\CommonHandlerTablesForm.resx">
+      <DependentUpon>CommonHandlerTablesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Title.resx">
+      <DependentUpon>Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MasterPolDataSet.xsc">
+      <DependentUpon>MasterPolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MasterPolDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterPolDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MasterPolDataSet.xss">
+      <DependentUpon>MasterPolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.jpg" />
+    <None Include="Resources\Мастер пол.png" />
+    <Content Include="Мастер пол.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

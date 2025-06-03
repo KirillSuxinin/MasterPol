@@ -1,0 +1,658 @@
+﻿{
+  "Rus": [
+    {
+      "NameTable": "AccessLogs",
+      "HeaderTable": "Доступ",
+      "Property": [
+        {
+          "NameProperty": "AccessLogID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "EmployeeID",
+          "HeaderProperty": "Код сотрудника"
+        },
+        {
+          "NameProperty": "CardID",
+          "HeaderProperty": "Код карта"
+        },
+        {
+          "NameProperty": "AccessTime",
+          "HeaderProperty": "Время доступа"
+        },
+        {
+          "NameProperty": "Location",
+          "HeaderProperty": "Локация"
+        },
+        {
+          "NameProperty": "Direction",
+          "HeaderProperty": "Тип"
+        }
+      ]
+    },
+    {
+      "NameTable": "Employees",
+      "HeaderTable": "Сотрудники",
+      "Property": [
+        {
+          "NameProperty": "EmployeeID",
+          "HeaderProperty": "Код сотрудника"
+        },
+        {
+          "NameProperty": "FullName",
+          "HeaderProperty": "ФИО"
+        },
+        {
+          "NameProperty": "BirthDate",
+          "HeaderProperty": "Дата рождения"
+        },
+        {
+          "NameProperty": "PassportData",
+          "HeaderProperty": "Паспортные данные"
+        },
+        {
+          "NameProperty": "BankAccount",
+          "HeaderProperty": "Банковские реквизиты"
+        },
+        {
+          "NameProperty": "FamilyStatus",
+          "HeaderProperty": "Семейное положение"
+        },
+        {
+          "NameProperty": "HealthInfo",
+          "HeaderProperty": "Состояние здоровье"
+        }
+      ]
+    },
+    {
+      "NameTable": "EmployeeSkills",
+      "HeaderTable": "Навыки сотрудника",
+      "Property": [
+        {
+          "NameProperty": "EmployeeSkillID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "EmployeeID",
+          "HeaderProperty": "Код сотрудника"
+        },
+        {
+          "NameProperty": "EquipmentName",
+          "HeaderProperty": "Наименование"
+        },
+        {
+          "NameProperty": "SkillLevel",
+          "HeaderProperty": "Уровень"
+        }
+      ]
+    },
+    {
+      "NameTable": "Managers",
+      "HeaderTable": "Менеджеры",
+      "Property": [
+        {
+          "NameProperty": "ManagerID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "FullName",
+          "HeaderProperty": "ФИО"
+        }
+      ]
+    },
+    {
+      "NameTable": "Materials",
+      "HeaderTable": "Материалы",
+      "Property": [
+        {
+          "NameProperty": "MaterialID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "MaterialType",
+          "HeaderProperty": "Тип"
+        },
+        {
+          "NameProperty": "MaterialName",
+          "HeaderProperty": "Наименование"
+        },
+        {
+          "NameProperty": "SupplierID",
+          "HeaderProperty": "Код поставщика"
+        },
+        {
+          "NameProperty": "QuantityPerPackage",
+          "HeaderProperty": "Количество в пачке"
+        },
+        {
+          "NameProperty": "UnitOfMeasure",
+          "HeaderProperty": "Единица измерения"
+        },
+        {
+          "NameProperty": "Description",
+          "HeaderProperty": "Описание"
+        },
+        {
+          "NameProperty": "Image",
+          "HeaderProperty": "Изображение"
+        },
+        {
+          "NameProperty": "Cost",
+          "HeaderProperty": "Стоимость"
+        },
+        {
+          "NameProperty": "QuantityInStock",
+          "HeaderProperty": "Остаток на скоале"
+        },
+        {
+          "NameProperty": "MinimumQuantity",
+          "HeaderProperty": "Минимальный остаток"
+        }
+      ]
+    },
+    {
+      "NameTable": "MaterialStockHistory",
+      "HeaderTable": "История запасов",
+      "Property": [
+        {
+          "NameProperty": "StockHistoryID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "MaterialID",
+          "HeaderProperty": "Код материала"
+        },
+        {
+          "NameProperty": "ChangeDate",
+          "HeaderProperty": "Дата изменения"
+        },
+        {
+          "NameProperty": "QuantityChange",
+          "HeaderProperty": "Количество"
+        },
+        {
+          "NameProperty": "NewQuantity",
+          "HeaderProperty": "Новое количество"
+        },
+        {
+          "NameProperty": "Reason",
+          "HeaderProperty": "Причина"
+        }
+      ]
+    },
+    {
+      "NameTable": "OrderItems",
+      "HeaderTable": "Элементы заказа",
+      "Property": [
+        {
+          "NameProperty": "OrderItemID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "OrderID",
+          "HeaderProperty": "Код заказа"
+        },
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код продукта"
+        },
+        {
+          "NameProperty": "Quantity",
+          "HeaderProperty": "Количество"
+        },
+        {
+          "NameProperty": "PricePerUnit",
+          "HeaderProperty": "Стоимость единицы"
+        },
+        {
+          "NameProperty": "ProductionDate",
+          "HeaderProperty": "Дата производства"
+        }
+      ]
+    },
+    {
+      "NameTable": "Orders",
+      "HeaderTable": "Заказы",
+      "Property": [
+        {
+          "NameProperty": "OrderID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "PartnerID",
+          "HeaderProperty": "Код партнера"
+        },
+        {
+          "NameProperty": "ManagerID",
+          "HeaderProperty": "Код менеджера"
+        },
+        {
+          "NameProperty": "OrderDate",
+          "HeaderProperty": "Дата заказа"
+        },
+        {
+          "NameProperty": "OrderStatus",
+          "HeaderProperty": "Статус заказа"
+        },
+        {
+          "NameProperty": "PrepaymentAmount",
+          "HeaderProperty": "Предоплата"
+        },
+        {
+          "NameProperty": "PrepaymentDate",
+          "HeaderProperty": "Дата предоплаты"
+        },
+        {
+          "NameProperty": "TotalAmount",
+          "HeaderProperty": "Общая стоимость"
+        },
+        {
+          "NameProperty": "DeliveryRequired",
+          "HeaderProperty": "Необходимость доставки"
+        },
+        {
+          "NameProperty": "DeliveryAddress",
+          "HeaderProperty": "Адрес доставки"
+        }
+      ]
+    },
+    {
+      "NameTable": "PartnerRatingHistory",
+      "HeaderTable": "История рейтинга партнера",
+      "Property": [
+        {
+          "NameProperty": "RatingHistoryID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "PartnerID",
+          "HeaderProperty": "Код партнера"
+        },
+        {
+          "NameProperty": "ManagerID",
+          "HeaderProperty": "Код менеджера"
+        },
+        {
+          "NameProperty": "RatingChangeDate",
+          "HeaderProperty": "Дата изменения"
+        },
+        {
+          "NameProperty": "OldRating",
+          "HeaderProperty": "Старый рейтинг"
+        },
+        {
+          "NameProperty": "NewRating",
+          "HeaderProperty": "Новый рейтинг"
+        },
+        {
+          "NameProperty": "Reason",
+          "HeaderProperty": "Причина"
+        }
+      ]
+    },
+    {
+      "NameTable": "Partners",
+      "HeaderTable": "Партнеры",
+      "Property": [
+        {
+          "NameProperty": "PartnerID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "PartnerType",
+          "HeaderProperty": "Тип"
+        },
+        {
+          "NameProperty": "CompanyName",
+          "HeaderProperty": "Наименование компании"
+        },
+        {
+          "NameProperty": "LegalAddress",
+          "HeaderProperty": "Юр. адрес"
+        },
+        {
+          "NameProperty": "INN",
+          "HeaderProperty": "ИНН"
+        },
+        {
+          "NameProperty": "DirectorFullName",
+          "HeaderProperty": "ФИО Директора"
+        },
+        {
+          "NameProperty": "ContactPhone",
+          "HeaderProperty": "Телефон"
+        },
+        {
+          "NameProperty": "ContactEmail",
+          "HeaderProperty": "Почта"
+        },
+        {
+          "NameProperty": "Logo",
+          "HeaderProperty": "Логотип"
+        },
+        {
+          "NameProperty": "Rating",
+          "HeaderProperty": "Рейтинг"
+        },
+        {
+          "NameProperty": "RubExchangeRate",
+          "HeaderProperty": "Процент скидки"
+        }
+      ]
+    },
+    {
+      "NameTable": "PartnerSalesLocations",
+      "HeaderTable": "Место продажи партнеров",
+      "Property": [
+        {
+          "NameProperty": "SalesLocationID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "PartnerID",
+          "HeaderProperty": "Код партнеров"
+        },
+        {
+          "NameProperty": "LocationDescription",
+          "HeaderProperty": "Место"
+        }
+      ]
+    },
+    {
+      "NameTable": "ProductMaterials",
+      "HeaderTable": "Материалы продукта",
+      "Property": [
+        {
+          "NameProperty": "ProductMaterialID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код продукта"
+        },
+        {
+          "NameProperty": "MaterialID",
+          "HeaderProperty": "Код материала"
+        },
+        {
+          "NameProperty": "MaterialQuantity",
+          "HeaderProperty": "Количество материала"
+        }
+      ]
+    },
+    {
+      "NameTable": "ProductMinPriceHistory",
+      "HeaderTable": "История мин цены продукта",
+      "Property": [
+        {
+          "NameProperty": "PriceHistoryID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код продукта"
+        },
+        {
+          "NameProperty": "ChangeDate",
+          "HeaderProperty": "Дата изменения"
+        },
+        {
+          "NameProperty": "OldPrice",
+          "HeaderProperty": "Старая цена"
+        },
+        {
+          "NameProperty": "NewPrice",
+          "HeaderProperty": "Новая цена"
+        },
+        {
+          "NameProperty": "Reason",
+          "HeaderProperty": "Причина"
+        }
+      ]
+    },
+    {
+      "NameTable": "Products",
+      "HeaderTable": "Продукция",
+      "Property": [
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "Article",
+          "HeaderProperty": "Артикл"
+        },
+        {
+          "NameProperty": "ProductType",
+          "HeaderProperty": "Тип"
+        },
+        {
+          "NameProperty": "ProductName",
+          "HeaderProperty": "Наименование"
+        },
+        {
+          "NameProperty": "Description",
+          "HeaderProperty": "Описание"
+        },
+        {
+          "NameProperty": "Image",
+          "HeaderProperty": "Изображение"
+        },
+        {
+          "NameProperty": "MinPriceForPartner",
+          "HeaderProperty": "Мин цена для партнеров"
+        },
+        {
+          "NameProperty": "PackageLength",
+          "HeaderProperty": "НУЖНО_ЗАПОЛНИТЬ"
+        },
+        {
+          "NameProperty": "PackageWidth",
+          "HeaderProperty": "Ширина упаковки"
+        },
+        {
+          "NameProperty": "PackageHeight",
+          "HeaderProperty": "Высота упаковки"
+        },
+        {
+          "NameProperty": "WeightWithoutPackage",
+          "HeaderProperty": "Вес без упаковки"
+        },
+        {
+          "NameProperty": "WeightWithPackage",
+          "HeaderProperty": "Вес с упаковкой"
+        },
+        {
+          "NameProperty": "QualityCertificate",
+          "HeaderProperty": "Сертификат"
+        },
+        {
+          "NameProperty": "StandardNumber",
+          "HeaderProperty": "Стандартный номер"
+        },
+        {
+          "NameProperty": "ProductionTime",
+          "HeaderProperty": "Время изготовления"
+        },
+        {
+          "NameProperty": "ProductionCost",
+          "HeaderProperty": "Стоимость изготовления"
+        },
+        {
+          "NameProperty": "WorkshopNumber",
+          "HeaderProperty": "Номер мастерской"
+        },
+        {
+          "NameProperty": "ProductionWorkers",
+          "HeaderProperty": "Номер работника"
+        }
+      ]
+    },
+    {
+      "NameTable": "ProductWarehouseStock",
+      "HeaderTable": "Запасы на складе",
+      "Property": [
+        {
+          "NameProperty": "ProductWarehouseStockID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "WarehouseID",
+          "HeaderProperty": "Код склада"
+        },
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код товара"
+        },
+        {
+          "NameProperty": "Quantity",
+          "HeaderProperty": "Остаток"
+        }
+      ]
+    },
+    {
+      "NameTable": "SalesHistory",
+      "HeaderTable": "История продаж",
+      "Property": [
+        {
+          "NameProperty": "SalesHistoryID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "PartnerID",
+          "HeaderProperty": "Код партнера"
+        },
+        {
+          "NameProperty": "SaleDate",
+          "HeaderProperty": "Дата продажи"
+        },
+        {
+          "NameProperty": "ProductID",
+          "HeaderProperty": "Код продукта"
+        },
+        {
+          "NameProperty": "Quantity",
+          "HeaderProperty": "Количество"
+        },
+        {
+          "NameProperty": "SaleAmount",
+          "HeaderProperty": "Общая стоимость"
+        }
+      ]
+    },
+    {
+      "NameTable": "Suppliers",
+      "HeaderTable": "Поставщики",
+      "Property": [
+        {
+          "NameProperty": "SupplierID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "SupplierType",
+          "HeaderProperty": "Тип"
+        },
+        {
+          "NameProperty": "SupplierName",
+          "HeaderProperty": "Наименование"
+        },
+        {
+          "NameProperty": "INN",
+          "HeaderProperty": "ИНН"
+        }
+      ]
+    },
+    {
+      "NameTable": "SupplyHistory",
+      "HeaderTable": "История поставок",
+      "Property": [
+        {
+          "NameProperty": "SupplyHistoryID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "SupplierID",
+          "HeaderProperty": "Код поставщика"
+        },
+        {
+          "NameProperty": "MaterialID",
+          "HeaderProperty": "Код материала"
+        },
+        {
+          "NameProperty": "SupplyDate",
+          "HeaderProperty": "Дата поставки"
+        },
+        {
+          "NameProperty": "Quantity",
+          "HeaderProperty": "Количество"
+        },
+        {
+          "NameProperty": "SupplyCost",
+          "HeaderProperty": "Стоимость поставки"
+        }
+      ]
+    },
+    {
+      "NameTable": "Users",
+      "HeaderTable": "Пользователи",
+      "Property": [
+        {
+          "NameProperty": "ID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "Login",
+          "HeaderProperty": "Логин"
+        },
+        {
+          "NameProperty": "Password",
+          "HeaderProperty": "Пароль"
+        },
+        {
+          "NameProperty": "Role",
+          "HeaderProperty": "Роль"
+        }
+      ]
+    },
+    {
+      "NameTable": "Warehouses",
+      "HeaderTable": "Склады",
+      "Property": [
+        {
+          "NameProperty": "WarehouseID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "WarehouseName",
+          "HeaderProperty": "Наименование"
+        },
+        {
+          "NameProperty": "WarehouseAddress",
+          "HeaderProperty": "Адрес"
+        }
+      ]
+    },
+    {
+      "NameTable": "WarehouseStock",
+      "HeaderTable": "Складские запасы",
+      "Property": [
+        {
+          "NameProperty": "WarehouseStockID",
+          "HeaderProperty": "Код"
+        },
+        {
+          "NameProperty": "WarehouseID",
+          "HeaderProperty": "Код склада"
+        },
+        {
+          "NameProperty": "MaterialID",
+          "HeaderProperty": "Код материала"
+        },
+        {
+          "NameProperty": "Quantity",
+          "HeaderProperty": "Количество"
+        }
+      ]
+    }
+  ]
+}
